@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="747" height="42" viewBox="0 0 847 52">
+    <g id="Rectangle_35" data-name="Rectangle 35" fill="#79b535" stroke="#707070" stroke-width="1">
+      <path d="M26,0H821a26,26,0,0,1,26,26V52a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V26A26,26,0,0,1,26,0Z" stroke="none"/>
+      <path d="M26,.5H821A25.5,25.5,0,0,1,846.5,26V51a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,51V26A25.5,25.5,0,0,1,26,.5Z" fill="none"/>
+    </g>
+    <text id="Change_Password" data-name="Change Password" transform="translate(424 40)" fill="#fffefe" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-109.901" y="0">Change Password</tspan></text>
+</svg>
