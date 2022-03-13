@@ -2,7 +2,7 @@
   "name": "ite",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "login.js",
   "scripts": {
     "start" : "node login.js"
   },
