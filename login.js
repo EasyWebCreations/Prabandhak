@@ -77,4 +77,7 @@ app.post('/auth', function(request, response) {
 // 	response.end();
 // });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000,function()
+{
+    console.log("Server started!!")
+});
