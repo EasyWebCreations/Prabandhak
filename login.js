@@ -4,10 +4,10 @@ const session = require('express-session');
 const path = require('path');
 
 const connection = mysql.createConnection({
-	host     : '127.0.0.1',
+	host     : 'us-cdbr-east-05.cleardb.net',
     port : 3306,
-	user     : 'root',
-	password : '',
+	user     : 'b0c522ab6e71be',
+	password : '079c45a6',
 	database : 'users'
 });
 
