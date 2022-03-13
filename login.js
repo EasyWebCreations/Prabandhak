@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
     port : 3306,
 	user     : 'b0c522ab6e71be',
 	password : '079c45a6',
-	database : 'users'
+	database : 'heroku_e064bc22a0a0a92'
 });
 
 const app = express();
