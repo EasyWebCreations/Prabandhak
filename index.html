@@ -35,12 +35,12 @@
             <!-- Login Form -->
             <div class="col-4 login-card">
                 <h3>Sign into your account...</h3>
-                <form action="login.php" method="POST">
+                <form action="/auth" method="POST">
                     <div class="form-group"><label>Username</label><input name="userid" type="text" class="form-control"
                             placeholder="" value="" /></div>
                     <div class="form-group"><label>Password</label><input name="password" type="password"
                             class="form-control" placeholder="" value="" /></div>
-                    <div class="form-group"><input type="submit" class="btn btn-primary" value="Login" /></div>
+                    <div class="form-group"><button type="submit" class="btn btn-primary" name="submit">Login</button></div>
                     <div class="form-group"><a href="dashboard.html" class="ForgetPwd">Forget Password?</a></div>
                 </form>
             </div>
