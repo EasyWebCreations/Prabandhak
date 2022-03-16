@@ -10,11 +10,7 @@ const con = mysql.createConnection({
 	password : '079c45a6',
 	database : 'heroku_e064bc22a0a0a92'
 });
-con.connect(function(err) {
-	if (err) throw err;
-	console.log("Connected!");
-	
-  });
+
 const app = express();
 
 app.use(session({
