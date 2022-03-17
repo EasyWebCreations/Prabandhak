@@ -22,11 +22,18 @@ app.use(session({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-
+// Specific folder example
+// app.use('/css', express.static(__dirname + 'public/css'))
+// app.use('/js', express.static(__dirname + 'public/js'))
+// app.use('/img', express.static(__dirname + 'public/images'))
 // http://localhost:3000/
 app.get('/', function(request, response) {
 	// Render login template
 	response.sendFile(path.join(__dirname + '/index.html'));
+});
+app.get('/add_emp', function(request, response) {
+	// Render login template
+	response.sendFile(path.join(__dirname + '/Add_Emp/add_employee.html'));
 });
 app.get('/dashboard', function(request, response) {
 	// Render login template

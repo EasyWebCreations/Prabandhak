@@ -1,0 +1,272 @@
+<!-- <?php
+session_start();
+if (!isset($_SESSION["user"])) {
+    header('Location: ../index.php');
+}
+$now = time();
+if ($now > $_SESSION['expire']) {
+    echo "<script src='../js/sweetalert.min.js'></script>
+    <script>swal('Operation Failed','Please upload in correct format','error');</script>";
+    session_destroy();
+}
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css_lib/4.1.3_bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_lib/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Registration Form</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <nav class="navbar navbar-dark" style="background-color: #294FCC;width: 100%;">
+        <a class="navbar-brand" href="../dashboard.php"><img src="../img/logo.svg" width="60" height="30" class="d-inline-block align-top" alt="">Home</a>
+    </nav>
+    <!-- Header End -->
+    <div class="body_without_nav">
+
+        <div style="background-color: #646561;width:50%;text-align: center;color: white;height:50px;padding: 2px;margin-top: 20px;">
+            <p style="font-weight: bolder;margin-top: 1%;">Add Employee</p>
+        </div>
+
+
+        <!-- Progress bar -->
+        <div class="progressbar" style="width:15%;margin-top: 10px;">
+            <div class="progress" id="progress" style="margin-bottom:0px"></div>
+
+            <div class="progress-step progress-step-active"></div>
+            <div class="progress-step"></div>
+            <div class="progress-step"></div>
+
+        </div>
+
+        <form action="insert.php" class="form" style="width:50% ;border: 5px solid #646561;border-radius: 30px;
+    margin-top:-50px" method="post">
+
+
+            <!-- Steps -->
+            <div class="form-step form-step-active">
+                <!-- Row starts -->
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username">Company*</label>
+                    </div>
+                    <div class="col-4">
+                        <select class='validation' type="text" name="FIRM" id="FIRM">
+                            <option value="TEE">TEE</option>
+                            <option value="SS">SS</option>
+                        </select>
+                    </div>
+                    <div class=" col-2">
+                        <label for="text">Site_ID*</label>
+                    </div>
+                    <div class="col-4">
+                        <!-- <input type="text" name="SITE_ID" id="SITE_ID" /> -->
+                        <select type="text" name="SITE_ID" id="SITE_ID">
+                            <!-- <?php
+                            include "../connectDB.php";
+                            $res = mysqli_query($conn, "SELECT * from sites");
+                            if ($res->num_rows > 0) {
+                                while ($row = mysqli_fetch_assoc($res)) {
+                                    echo "<option value=" . $row["SITE_ID"] . ">" . $row["SITE_ID"] . "</option>";
+                                }
+                            } else {
+                                echo "<option>No Site Found<option>";
+                            }
+                            ?> -->
+                        </select>
+                    </div>
+                </div>
+                <!-- Row ends -->
+                <!-- Row starts -->
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username">Name*</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="text" name="EMP_NAME" id="EMP_NAME" />
+                    </div>
+                    <div class="col-2">
+                        <label for="username">Mobile*</label>
+                    </div>
+                    <div class="col-4">
+                        <input type="tel" class='validation' name="EMP_MOBILE" id="EMP_MOBILE" />
+                    </div>
+                </div>
+                <!-- Row ends -->
+                <!-- Row starts -->
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username">Aadhar</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="text" name="AADHAR" id="AADHAR" />
+                    </div>
+                    <div class="col-2">
+                        <label for="username">Address</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="text" name="EMP_ADDRESS" id="EMP_ADDRESS" />
+                    </div>
+                </div>
+                <!-- Row ends -->
+                <!-- Row starts -->
+                <div class="row">
+                    <div class="col-2">
+                        <label for="pan">PAN*</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="text" name="PAN" id="PAN" />
+                    </div>
+                </div>
+                <!-- Row ends -->
+                <a href="#" style="width:10%" class="btn btn-primary width-40  btn-next">Next</a>
+            </div>
+
+
+
+            <div class="form-step">
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username" style="margin-right:20px">UAN*</label>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class='validation' style="margin-right:60px" name="UAN_NO" id="UAN_NO" />
+                    </div>
+                    <div class="col">
+                        <label for="username" style="margin-right:20px">ESIC*</label>
+                    </div>
+                    <div class="col">
+                        <input class='validation' type="text" name="ESIC_NO" id="ESIC_NO" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username" style="margin-right:20px">Bank_ACC*</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="text" style="margin-right:60px" name="BANK_AC_NO" id="BANK_AC_NO" />
+                    </div>
+                    <div class="col">
+                        <label for="username" style="margin-right:20px">IFSC_Code*</label>
+                    </div>
+                    <div class="col">
+                        <input class='validation' type="text" name="IFSC_CODE" id="IFSC_CODE" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username" style="margin-right:20px">Bank_Name*</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="text" style="margin-right:60px" name="BNK_NAME" id="BNK_NAME" />
+                    </div>
+                    <div class="col">
+                        <label class='validation' for="username" style="margin-right:20px">Bank_Address</label>
+                    </div>
+                    <div class="col">
+                        <input class='validation' type="text" name="BNK_ADDRESS" id="BNK_ADDRESS" />
+                    </div>
+
+                </div>
+                <div class="row">
+                    <a href="#" style="width:10%" class="btn btn-primary btn-prev  ">Prev</a>
+                    <a href="#" style="width:10%" class="btn btn-primary btn-next  ml-auto">Next</a>
+                </div>
+            </div>
+
+
+            <div class="form-step">
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username" style="margin-right:20px">Designation*</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="text" style="margin-right:60px" name="DESIGNATION" id="DESIGNATION" />
+                    </div>
+                    <div class="col-2">
+                        <label for="username" style="margin-right:20px">Category</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="text" name="CATEGORY" id="CATEGORY" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username" style="margin-right:20px">Basic_Salary*</label>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" class='validation' style="margin-right:60px" name="BASIC_SAL" id="BASIC_SAL" />
+                    </div>
+                    <div class="col-2">
+                        <label for="username" style="margin-right:20px">HRA*</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="number" name="HRA_SAL" id="HRA_SAL" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="username">Allowance</label>
+                    </div>
+                    <div class="col-4">
+                        <input class='validation' type="number" style="margin-right:60px" name="SPL_ALLOW" id="SPL_ALLOW" />
+                    </div>
+                    <div class="col-2">
+                        <label for="username" style="margin-right:20px">CTC :</label>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <label id="CTC" for="active"><b>Active</b></label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label id="STATUS" for="status">ESIC Choice</label>
+                    </div>
+                    <div class="col-4">
+                        <select class='validation' type="text" name="STATUS" id="STATUS">
+                            <option value="Y">Calculate ESIC</option>
+                            <option value="N">No ESIC</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btns-group" style="display: flex;">
+
+                    <a href="#" class="btn btn-primary btn-prev width-40">Prev</a>
+
+                    <input type="submit" name="submit" value="Save" class="btn width-40 ml-auto" style="width:20%" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <nav class="navbar navbar-dark" style="background-color: #294FCC;width:100%;">
+        <a href="#" class="navbar-brand" style="color:white;text-decoration: none;">Copyright @ 2021 All rights
+            reserved</a>
+        <a href="#" class="navbar-brand" style="float: right;color:white;text-decoration: none;">
+            This portal is managed by IT Enthusiasts
+        </a>
+    </nav>
+    <script src="js/ajax_jquery_3.6.0_jquery.min.js"></script>
+    <script src="js/1.14.3_popper.min.js">
+    </script>
+    <script src="js/bootstrap_4.1.3_bootstrap.min.js">
+    </script>
+    <script src="js/valiation.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+
+</body>
+
+</html>
