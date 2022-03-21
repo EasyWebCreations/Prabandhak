@@ -49,14 +49,24 @@ if ($now > $_SESSION['expire']) {
 
         </div>
 
+        <form action="/register" method="POST">
+            <label for="empid">EMP_ID:</label>
+            <input type="text" id="EMP_ID" name="EMP_ID"><br><br>
+            <label for="lname">SITE ID:</label>
+            <input type="text" id="SITE_ID" name="SITE_ID"><br><br>
+            <label for="lname">EMP NAME:</label>
+            <input type="text" id="EMP_NAME" name="EMP_NAME"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+<!-- 
         <form action="insert.php" class="form" style="width:50% ;border: 5px solid #646561;border-radius: 30px;
-    margin-top:-50px" method="post">
+    margin-top:-50px" method="post"> -->
 
 
             <!-- Steps -->
-            <div class="form-step form-step-active">
+            <!-- <div class="form-step form-step-active"> -->
                 <!-- Row starts -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-2">
                         <label for="username">Company*</label>
                     </div>
@@ -69,9 +79,9 @@ if ($now > $_SESSION['expire']) {
                     <div class=" col-2">
                         <label for="text">Site_ID*</label>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4"> -->
                         <!-- <input type="text" name="SITE_ID" id="SITE_ID" /> -->
-                        <select type="text" name="SITE_ID" id="SITE_ID">
+                        <!-- <select type="text" name="SITE_ID" id="SITE_ID"> -->
                             <!-- <?php
                             include "../connectDB.php";
                             $res = mysqli_query($conn, "SELECT * from sites");
@@ -83,12 +93,12 @@ if ($now > $_SESSION['expire']) {
                                 echo "<option>No Site Found<option>";
                             }
                             ?> -->
-                        </select>
+                        <!-- </select>
                     </div>
-                </div>
+                </div> -->
                 <!-- Row ends -->
                 <!-- Row starts -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-2">
                         <label for="username">Name*</label>
                     </div>
@@ -101,10 +111,10 @@ if ($now > $_SESSION['expire']) {
                     <div class="col-4">
                         <input type="tel" class='validation' name="EMP_MOBILE" id="EMP_MOBILE" />
                     </div>
-                </div>
+                </div> -->
                 <!-- Row ends -->
                 <!-- Row starts -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-2">
                         <label for="username">Aadhar</label>
                     </div>
@@ -117,19 +127,19 @@ if ($now > $_SESSION['expire']) {
                     <div class="col-4">
                         <input class='validation' type="text" name="EMP_ADDRESS" id="EMP_ADDRESS" />
                     </div>
-                </div>
+                </div> -->
                 <!-- Row ends -->
                 <!-- Row starts -->
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-2">
                         <label for="pan">PAN*</label>
                     </div>
                     <div class="col-4">
                         <input class='validation' type="text" name="PAN" id="PAN" />
                     </div>
-                </div>
+                </div> -->
                 <!-- Row ends -->
-                <a href="#" style="width:10%" class="btn btn-primary width-40  btn-next">Next</a>
+                <!-- <a href="#" style="width:10%" class="btn btn-primary width-40  btn-next">Next</a>
             </div>
 
 
@@ -250,7 +260,7 @@ if ($now > $_SESSION['expire']) {
                 </div>
             </div>
         </form>
-    </div>
+    </div> -->
 
     <nav class="navbar navbar-dark" style="background-color: #294FCC;width:100%;">
         <a href="#" class="navbar-brand" style="color:white;text-decoration: none;">Copyright @ 2021 All rights
