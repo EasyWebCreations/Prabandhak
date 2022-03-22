@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row" style="margin-top: 5%">
             <div class="col">
-                <img src="img/add_employee.png" id="Add_Emp/add_employee" class="img1"
+                <img src="img/add_employee.png" id="register" class="img1"
                     style="width: 190px;margin-left:40%">
                 <h3 style="font-size: 30px;color:gray;margin-left:40%;margin-top: 10px;">Add Employee</h3>
             </div>
@@ -82,7 +82,7 @@
     for (var i = 0; i < images.length; i++) {
         var image = images[i];
         image.onclick = function(event) {
-            window.location.href = this.id + '.php';
+            window.location.href = this.id;
         };
     }
     </script>
