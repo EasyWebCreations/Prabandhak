@@ -1,0 +1,49 @@
+.city {
+    height: 90%;
+}
+
+.svg-class {
+    fill: #160FC7;
+}
+
+.svg-active-class {
+    fill: whitesmoke;
+}
+
+.w3-bar-item {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+#add_svg:hover {
+    fill: #66d82d;
+}
+
+#add_svg {
+    fill: #599e36;
+}
+
+#remove_svg:hover {
+    fill: #f71616;
+}
+
+#remove_svg {
+    margin-top: 25px;
+    fill: #ce3d3d;
+}
+
+.change-pass-head {
+    margin-top: 10%;
+    padding: 10px;
+    height: 70px;
+    background-image: url(img/chng_pass.svg);
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+.change-pass-form {
+    width: 65%;
+    margin-left: 250px;
+    padding: 25px;
+}

@@ -5,8 +5,8 @@ const path = require('path');
 const bodyParser = require("body-parser");
 const { resolveInclude } = require("ejs");
 // const bcrypt = require("bcrypt")
-var reportlist = ["A", "B", "C"];
-var settinglist = ["D", "E", "F"];
+var reportlist = ["PF Format", "ESIC Format", "NEFT Format", "Custom Report", "logout"];
+var settinglist = ["Site Settings", "Employee Settings", "Change Password", "Salary Settings", "Log Out"];
 const con = mysql.createConnection({
 	host     : 'us-cdbr-east-05.cleardb.net',
     port : 3306,
@@ -59,7 +59,7 @@ app.get("/settings", function (req, res) {
    
     res.render("template", {
         pagename: "settings",
-		imgname : "img/add_employee.png",
+		imgname : "img/settings.png",
 		list : settinglist
     })
 });
