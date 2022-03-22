@@ -91,40 +91,8 @@ app.post('/auth', function(request, response) {
 		response.end();
 	}
 });
-// app.post("/createUser", async (req,res) => {
-// 	const EMP_ID = req.body.EMP_ID;
-// 	const SITE_ID = req.body.SITE_ID;
-// 	const EMP_NAME = req.body.EMP_NAME;
-// 	db.getConnection( async (err, connection) => {
-// 	 if (err) throw (err)
-// 	 const sqlSearch = "SELECT * FROM emp_details WHERE user = ?"
-// 	 const search_query = mysql.format(sqlSearch,[user])
-// 	 const sqlInsert = "INSERT INTO emp_details VALUES (0,?,?)"
-// 	 const insert_query = mysql.format(sqlInsert,[EMP_ID,SITE_ID,EMP_NAME])
-// 	 // ? will be replaced by values
-// 	 // ?? will be replaced by string
-// 	 await connection.query (search_query, async (err, result) => {
-// 	  if (err) throw (err)
-// 	  console.log("------> Search Results")
-// 	  console.log(result.length)
-// 	  if (result.length != 0) {
-// 	   connection.release()
-// 	   console.log("------> User already exists")
-// 	   res.sendStatus(409) 
-// 	  } 
-// 	  else {
-// 	   await connection.query (insert_query, (err, result)=> {
-// 	   connection.release()
-// 	   if (err) throw (err)
-// 	   console.log ("--------> Created new User")
-// 	   console.log(result.insertId)
-// 	   res.sendStatus(201)
-// 	  })
-// 	 }
-// 	}) //end of connection.query()
-// 	}) //end of db.getConnection()
-// 	}) //end of app.post()
 
+s
 
 	app.post('/register', function(req, res) {
 
