@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="reports.css">
     <title>Reports</title>
@@ -16,7 +17,8 @@
 <body>
     <!-- Header start -->
     <nav class="navbar navbar-dark" style="background-color: #294FCC;">
-        <a class="navbar-brand" href="#"><img src="img/logo.svg" width="60" height="30" class="d-inline-block align-top" alt="">Home</a>
+        <a class="navbar-brand" href="#"><img src="img/logo.svg" width="60" height="30" class="d-inline-block align-top"
+                alt="">Home</a>
     </nav>
     <!-- Header End -->
 
@@ -24,45 +26,57 @@
     <div class="w3-sidebar w3-bar-block w3-card " style="width:300px; position:fixed">
         <div class="report-image" style="background-color: #D8DBF2; text-align: center; ">
             <img src="<%= imgname %>" alt="" style="width:200px; margin:20px 45px">
-            <h3 style="margin-top: -15px;padding-bottom:15px;color: black;"><b><%= pagename %></b></h3>
+            <h3 style="margin-top: -15px;padding-bottom:15px;color: black;"><b>
+                    <%= pagename %>
+                </b></h3>
         </div>
 
         <button class="w3-bar-item w3-button tablink svg-class" onclick="openCity(event, 'London ')">
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 30.07 36">
-                <path id="Icon_simple-sitepoint" data-name="Icon simple-sitepoint" d="M3.707,15.8l2.656,2.532,8.4,7.712,3.6-3.437a1.206,1.206,0,0,0-.069-1.477l-3.306-2.853L15,18.268l-3.556-3.4a1.182,1.182,0,0,1,.031-1.618L21.06,4.137,16.719,0,3.713,12.357a2.357,2.357,0,0,0,0,3.443ZM32.291,20.2l-2.655-2.537L21.243,9.955l-3.617,3.437a1.16,1.16,0,0,0,.067,1.477L21,17.706h-.009l3.553,3.4a1.155,1.155,0,0,1-.044,1.6l-9.587,9.112L19.282,36l13-12.357a2.354,2.354,0,0,0,0-3.442l0,0Z" transform="translate(-2.965)" />
+                <path id="Icon_simple-sitepoint" data-name="Icon simple-sitepoint"
+                    d="M3.707,15.8l2.656,2.532,8.4,7.712,3.6-3.437a1.206,1.206,0,0,0-.069-1.477l-3.306-2.853L15,18.268l-3.556-3.4a1.182,1.182,0,0,1,.031-1.618L21.06,4.137,16.719,0,3.713,12.357a2.357,2.357,0,0,0,0,3.443ZM32.291,20.2l-2.655-2.537L21.243,9.955l-3.617,3.437a1.16,1.16,0,0,0,.067,1.477L21,17.706h-.009l3.553,3.4a1.155,1.155,0,0,1-.044,1.6l-9.587,9.112L19.282,36l13-12.357a2.354,2.354,0,0,0,0-3.442l0,0Z"
+                    transform="translate(-2.965)" />
             </svg>
             <%= list[0] %>
         </button>
 
         <button class="w3-bar-item w3-button tablink svg-class" onclick="openCity(event, 'Paris ')">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 31.5 36">
-                <path id="Icon_awesome-user-tie" data-name="Icon awesome-user-tie" d="M15.75,18a9,9,0,1,0-9-9A9,9,0,0,0,15.75,18Zm6.736,2.292L19.125,33.75l-2.25-9.562,2.25-3.937h-6.75l2.25,3.938-2.25,9.563L9.014,20.292A9.434,9.434,0,0,0,0,29.7v2.925A3.376,3.376,0,0,0,3.375,36h24.75A3.376,3.376,0,0,0,31.5,32.625V29.7a9.434,9.434,0,0,0-9.014-9.408Z" />
-            </svg>  
+                <path id="Icon_awesome-user-tie" data-name="Icon awesome-user-tie"
+                    d="M15.75,18a9,9,0,1,0-9-9A9,9,0,0,0,15.75,18Zm6.736,2.292L19.125,33.75l-2.25-9.562,2.25-3.937h-6.75l2.25,3.938-2.25,9.563L9.014,20.292A9.434,9.434,0,0,0,0,29.7v2.925A3.376,3.376,0,0,0,3.375,36h24.75A3.376,3.376,0,0,0,31.5,32.625V29.7a9.434,9.434,0,0,0-9.014-9.408Z" />
+            </svg>
             <%= list[1] %>
         </button>
 
         <button class="w3-bar-item w3-button tablink svg-class" onclick="openCity(event, 'Tokyo ')">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 31.5 36">
-                <path id="Icon_awesome-unlock-alt" data-name="Icon awesome-unlock-alt" d="M28.125,18H10.688V10.751a5.063,5.063,0,1,1,10.125-.063v1.125A1.683,1.683,0,0,0,22.5,13.5h2.25a1.683,1.683,0,0,0,1.688-1.687V10.688a10.688,10.688,0,1,0-21.375.105V18H3.375A3.376,3.376,0,0,0,0,21.375v11.25A3.376,3.376,0,0,0,3.375,36h24.75A3.376,3.376,0,0,0,31.5,32.625V21.375A3.376,3.376,0,0,0,28.125,18ZM18.563,28.688a2.813,2.813,0,0,1-5.625,0V25.313a2.813,2.813,0,0,1,5.625,0Z" transform="translate(0 0)" />
+                <path id="Icon_awesome-unlock-alt" data-name="Icon awesome-unlock-alt"
+                    d="M28.125,18H10.688V10.751a5.063,5.063,0,1,1,10.125-.063v1.125A1.683,1.683,0,0,0,22.5,13.5h2.25a1.683,1.683,0,0,0,1.688-1.687V10.688a10.688,10.688,0,1,0-21.375.105V18H3.375A3.376,3.376,0,0,0,0,21.375v11.25A3.376,3.376,0,0,0,3.375,36h24.75A3.376,3.376,0,0,0,31.5,32.625V21.375A3.376,3.376,0,0,0,28.125,18ZM18.563,28.688a2.813,2.813,0,0,1-5.625,0V25.313a2.813,2.813,0,0,1,5.625,0Z"
+                    transform="translate(0 0)" />
             </svg>
-              
+
             <%= list[2] %>
         </button>
 
         <button class="w3-bar-item w3-button tablink svg-class" onclick="openCity(event, 'Mumbai ')">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="36" viewBox="0 0 34.992 24.494">
-                <path id="Icon_awesome-money-bill-wave" data-name="Icon awesome-money-bill-wave" d="M33.962,3.478A16.191,16.191,0,0,0,27.6,2.25c-6.734,0-13.468,3.408-20.2,3.408a16.589,16.589,0,0,1-5.066-.75,1.869,1.869,0,0,0-.566-.089A1.74,1.74,0,0,0,0,6.559V23.905a1.739,1.739,0,0,0,1.03,1.611,16.182,16.182,0,0,0,6.365,1.229c6.734,0,13.469-3.409,20.2-3.409a16.589,16.589,0,0,1,5.066.75,1.87,1.87,0,0,0,.566.089,1.74,1.74,0,0,0,1.763-1.739V5.089a1.741,1.741,0,0,0-1.031-1.611ZM2.624,7.73a19.027,19.027,0,0,0,3.429.488,3.5,3.5,0,0,1-3.429,2.818Zm0,15.582V20.7a3.5,3.5,0,0,1,3.483,3.357A13.208,13.208,0,0,1,2.624,23.312ZM17.5,19.746c-2.416,0-4.374-2.35-4.374-5.249S15.08,9.248,17.5,9.248,21.87,11.6,21.87,14.5,19.911,19.746,17.5,19.746Zm14.872,1.519A18.8,18.8,0,0,0,29.4,20.8a3.492,3.492,0,0,1,2.97-2.694Zm0-12.909A3.492,3.492,0,0,1,29.316,4.99a13.143,13.143,0,0,1,3.051.692Z" transform="translate(0 -2.25)"/>
-              </svg>              
-              <%= list[3] %>
+                <path id="Icon_awesome-money-bill-wave" data-name="Icon awesome-money-bill-wave"
+                    d="M33.962,3.478A16.191,16.191,0,0,0,27.6,2.25c-6.734,0-13.468,3.408-20.2,3.408a16.589,16.589,0,0,1-5.066-.75,1.869,1.869,0,0,0-.566-.089A1.74,1.74,0,0,0,0,6.559V23.905a1.739,1.739,0,0,0,1.03,1.611,16.182,16.182,0,0,0,6.365,1.229c6.734,0,13.469-3.409,20.2-3.409a16.589,16.589,0,0,1,5.066.75,1.87,1.87,0,0,0,.566.089,1.74,1.74,0,0,0,1.763-1.739V5.089a1.741,1.741,0,0,0-1.031-1.611ZM2.624,7.73a19.027,19.027,0,0,0,3.429.488,3.5,3.5,0,0,1-3.429,2.818Zm0,15.582V20.7a3.5,3.5,0,0,1,3.483,3.357A13.208,13.208,0,0,1,2.624,23.312ZM17.5,19.746c-2.416,0-4.374-2.35-4.374-5.249S15.08,9.248,17.5,9.248,21.87,11.6,21.87,14.5,19.911,19.746,17.5,19.746Zm14.872,1.519A18.8,18.8,0,0,0,29.4,20.8a3.492,3.492,0,0,1,2.97-2.694Zm0-12.909A3.492,3.492,0,0,1,29.316,4.99a13.143,13.143,0,0,1,3.051.692Z"
+                    transform="translate(0 -2.25)" />
+            </svg>
+            <%= list[3] %>
         </button>
 
         <a class="w3-bar-item w3-button tablink svg-class" href="inedx.html">
             <svg xmlns="http://www.w3.org/2000/svg " width="20 " height="36 " viewBox="0 0 26.992 30.849 ">
-                <path id="Icon_metro-switch " data-name="Icon metro-switch " d="M21.851,6.344v4.1a9.624,9.624,0,1,1-7.712,0v-4.1a13.5,13.5,0,1,0,7.712,0ZM16.067,1.928h3.856V17.352H16.067Z " transform="translate(-4.499 -1.928) " />
-            </svg> <%= list[4] %>
+                <path id="Icon_metro-switch " data-name="Icon metro-switch "
+                    d="M21.851,6.344v4.1a9.624,9.624,0,1,1-7.712,0v-4.1a13.5,13.5,0,1,0,7.712,0ZM16.067,1.928h3.856V17.352H16.067Z "
+                    transform="translate(-4.499 -1.928) " />
+            </svg>
+            <%= list[4] %>
         </a>
 
-        
+
     </div>
     <!-- Sidebar menu ends -->
 
@@ -71,94 +85,102 @@
         <div id="London " class="w3-container city " style="display:none ">
             <!-- Site Filter for PF Format -->
             <!-- setting 1 -->
-            <% if (pagename === "settings") { %>
+            <% if (pagename==="settings" ) { %>
                 <h1>Hello From settings - tab 1</h1>
-            <% } else if (pagename ==="reports") { %>
-             <h1>From reports</h1>
-             <div class="row " style="margin-top: 5%;margin-left: 38%; ">
-                <form class="row " action="# ">
-                    <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
-                        <option value="A">All Sites</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                        </select>
-                    <input class="btn btn-primary" type="submit " value="Go " style="width: 50px;">
+                <% } else if (pagename==="reports" ) { %>
+                    <h1>From reports</h1>
+                    <div class="row " style="margin-top: 5%;margin-left: 38%; ">
+                        <form class="row " action="# ">
+                            <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
+                                <option value="A">All Sites</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+                            <input class="btn btn-primary" type="submit " value="Go " style="width: 50px;">
 
-                </form>
-            </div>
-            <div class="row ">
-                <div class="col-12 ">
-                    <div style="margin-left: 1%;margin-top:5% ">
-                        <!-- PF Format -->
-                        <table id="pf_table" class="table table-striped table-primary table-hover table-bordered">
-                            <th width="5%">Month</th>
-                            <th width="10%">UAN </th>
-                            <th width="25%">Employee Name</th>
-                            <th width="10%">Gross Wages</th>
-                            <th width="10%">EPF Wages</th>
-                            <th width="10%">EPF CR</th>
-                            <th width="10%">EPS CR</th>
-                            <th width="10%">EPF EPS DR</th>
-                            <th width="5%">NCP DAYS</th>
-                            <th width="5%">REFUND OF ADV</th>
-
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Ramakant bahskar Mishra</td>
-                                <td>10000</td>
-                                <td>100</td>
-                                <td>121</td>
-                                <td>121</td>
-                                <td>12312</td>
-                                <td>2</td>
-                                <td>0</td>
-                            </tr>
-
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Ramakant Mishra</td>
-                                <td>1000000</td>
-                                <td>100000</td>
-                                <td>12131</td>
-                                <td>1214123</td>
-                                <td>12312314</td>
-                                <td>2</td>
-                                <td>0</td>
-                            </tr>
-                        </table>
-                        <!-- Sites Table Ends -->
+                        </form>
                     </div>
-                </div>
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div style="margin-left: 1%;margin-top:5% ">
+                                <!-- PF Format -->
+                                <table id="pf_table"
+                                    class="table table-striped table-primary table-hover table-bordered">
+                                    <th width="5%">Month</th>
+                                    <th width="10%">UAN </th>
+                                    <th width="25%">Employee Name</th>
+                                    <th width="10%">Gross Wages</th>
+                                    <th width="10%">EPF Wages</th>
+                                    <th width="10%">EPF CR</th>
+                                    <th width="10%">EPS CR</th>
+                                    <th width="10%">EPF EPS DR</th>
+                                    <th width="5%">NCP DAYS</th>
+                                    <th width="5%">REFUND OF ADV</th>
 
-</div>
-            <!-- Row ends here -->
-            <!-- Download -->
-            <div class="row" style="margin-top: 5%;">
-                <div class="col">
-                    <input style="margin-right: 2%;" type="radio" id="age1" name="age" value="30">
-                    <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="40.748" height="39.822" viewBox="0 0 50.748 49.822">
-                        <path id="Icon_simple-microsoftexcel" data-name="Icon simple-microsoftexcel" d="M49.8,6.425h-17V9.571h5.011v4.978H32.8v1.586h5.011v4.984H32.8v1.63h5.011v4.713H32.8V29.35h5.011v4.724H32.8v1.888h5.011v4.751H32.8v3.466h17c.269-.08.493-.4.672-.947a4.637,4.637,0,0,0,.273-1.345V7c0-.271-.093-.433-.273-.491A2.326,2.326,0,0,0,49.8,6.425ZM47.6,40.709H39.442V35.962H47.6v4.747Zm0-6.635H39.442V29.348H47.6Zm0-6.614H39.442V22.767H47.6V27.46Zm0-6.343H39.442V16.139H47.6v4.978Zm0-6.6H39.442V9.573H47.6v4.948ZM0,5.64V44.972L29.941,50.15V.329L0,5.657ZM17.747,35.393q-.171-.463-1.6-3.939c-.949-2.317-1.522-3.667-1.689-4.051H14.4L11.19,35.046,6.9,34.757l5.092-9.515L7.327,15.726,11.7,15.5,14.6,22.941h.057l3.267-7.783,4.523-.285-5.386,10.3,5.551,10.5-4.861-.285Z" transform="translate(0 -0.328)" fill="#098212"/>
-                    </svg>
-                    <input style="margin-right: 2%;" type="radio" id="age2" name="age" value="60">
-                    <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="27.366" height="39.822" viewBox="0 0 37.366 49.822">
-                        <path id="Icon_awesome-file-pdf" data-name="Icon awesome-file-pdf" d="M17.7,24.921c-.487-1.557-.477-4.564-.195-4.564C18.323,20.357,18.245,23.947,17.7,24.921Zm-.165,4.593a44.9,44.9,0,0,1-2.764,6.1,35.831,35.831,0,0,1,6.121-2.131A12.605,12.605,0,0,1,17.535,29.513ZM8.378,41.658c0,.078,1.284-.525,3.4-3.912C11.122,38.359,8.943,40.13,8.378,41.658ZM24.132,15.569H37.366V47.486a2.33,2.33,0,0,1-2.335,2.335H2.335A2.33,2.33,0,0,1,0,47.486V2.335A2.33,2.33,0,0,1,2.335,0H21.8V13.234A2.342,2.342,0,0,0,24.132,15.569Zm-.778,16.717A9.766,9.766,0,0,1,19.2,27.052c.438-1.8,1.129-4.535.6-6.247-.457-2.861-4.126-2.579-4.651-.662-.487,1.781-.039,4.291.788,7.493a91.375,91.375,0,0,1-3.97,8.349c-.01,0-.01.01-.019.01-2.637,1.353-7.162,4.33-5.3,6.617a3.024,3.024,0,0,0,2.092.973c1.742,0,3.474-1.752,5.946-6.014a55.467,55.467,0,0,1,7.687-2.258,14.747,14.747,0,0,0,6.228,1.9,2.519,2.519,0,0,0,1.917-4.223C29.163,31.664,25.232,32.043,23.354,32.287ZM36.685,10.217,27.149.681A2.334,2.334,0,0,0,25.495,0h-.584V12.455H37.366v-.594A2.328,2.328,0,0,0,36.685,10.217ZM29.475,35.06c.4-.263-.243-1.158-4.165-.876C28.92,35.722,29.475,35.06,29.475,35.06Z" fill="#ff0007"/>
-                      </svg>
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Ramakant bahskar Mishra</td>
+                                        <td>10000</td>
+                                        <td>100</td>
+                                        <td>121</td>
+                                        <td>121</td>
+                                        <td>12312</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                    </tr>
+
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Ramakant Mishra</td>
+                                        <td>1000000</td>
+                                        <td>100000</td>
+                                        <td>12131</td>
+                                        <td>1214123</td>
+                                        <td>12312314</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                    </tr>
+                                </table>
+                                <!-- Sites Table Ends -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Row ends here -->
+                    <!-- Download -->
+                    <div class="row" style="margin-top: 5%;">
+                        <div class="col">
+                            <input style="margin-right: 2%;" type="radio" id="age1" name="age" value="30">
+                            <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="40.748"
+                                height="39.822" viewBox="0 0 50.748 49.822">
+                                <path id="Icon_simple-microsoftexcel" data-name="Icon simple-microsoftexcel"
+                                    d="M49.8,6.425h-17V9.571h5.011v4.978H32.8v1.586h5.011v4.984H32.8v1.63h5.011v4.713H32.8V29.35h5.011v4.724H32.8v1.888h5.011v4.751H32.8v3.466h17c.269-.08.493-.4.672-.947a4.637,4.637,0,0,0,.273-1.345V7c0-.271-.093-.433-.273-.491A2.326,2.326,0,0,0,49.8,6.425ZM47.6,40.709H39.442V35.962H47.6v4.747Zm0-6.635H39.442V29.348H47.6Zm0-6.614H39.442V22.767H47.6V27.46Zm0-6.343H39.442V16.139H47.6v4.978Zm0-6.6H39.442V9.573H47.6v4.948ZM0,5.64V44.972L29.941,50.15V.329L0,5.657ZM17.747,35.393q-.171-.463-1.6-3.939c-.949-2.317-1.522-3.667-1.689-4.051H14.4L11.19,35.046,6.9,34.757l5.092-9.515L7.327,15.726,11.7,15.5,14.6,22.941h.057l3.267-7.783,4.523-.285-5.386,10.3,5.551,10.5-4.861-.285Z"
+                                    transform="translate(0 -0.328)" fill="#098212" />
+                            </svg>
+                            <input style="margin-right: 2%;" type="radio" id="age2" name="age" value="60">
+                            <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="27.366"
+                                height="39.822" viewBox="0 0 37.366 49.822">
+                                <path id="Icon_awesome-file-pdf" data-name="Icon awesome-file-pdf"
+                                    d="M17.7,24.921c-.487-1.557-.477-4.564-.195-4.564C18.323,20.357,18.245,23.947,17.7,24.921Zm-.165,4.593a44.9,44.9,0,0,1-2.764,6.1,35.831,35.831,0,0,1,6.121-2.131A12.605,12.605,0,0,1,17.535,29.513ZM8.378,41.658c0,.078,1.284-.525,3.4-3.912C11.122,38.359,8.943,40.13,8.378,41.658ZM24.132,15.569H37.366V47.486a2.33,2.33,0,0,1-2.335,2.335H2.335A2.33,2.33,0,0,1,0,47.486V2.335A2.33,2.33,0,0,1,2.335,0H21.8V13.234A2.342,2.342,0,0,0,24.132,15.569Zm-.778,16.717A9.766,9.766,0,0,1,19.2,27.052c.438-1.8,1.129-4.535.6-6.247-.457-2.861-4.126-2.579-4.651-.662-.487,1.781-.039,4.291.788,7.493a91.375,91.375,0,0,1-3.97,8.349c-.01,0-.01.01-.019.01-2.637,1.353-7.162,4.33-5.3,6.617a3.024,3.024,0,0,0,2.092.973c1.742,0,3.474-1.752,5.946-6.014a55.467,55.467,0,0,1,7.687-2.258,14.747,14.747,0,0,0,6.228,1.9,2.519,2.519,0,0,0,1.917-4.223C29.163,31.664,25.232,32.043,23.354,32.287ZM36.685,10.217,27.149.681A2.334,2.334,0,0,0,25.495,0h-.584V12.455H37.366v-.594A2.328,2.328,0,0,0,36.685,10.217ZM29.475,35.06c.4-.263-.243-1.158-4.165-.876C28.92,35.722,29.475,35.06,29.475,35.06Z"
+                                    fill="#ff0007" />
+                            </svg>
 
 
-                </div>
+                        </div>
 
-                <div class="col" style="margin-left:60%">
-                    <input class="btn btn-success" onclick="" type="submit" value="Donwnload" style="width: 150px;">
-                </div>
+                        <div class="col" style="margin-left:60%">
+                            <input class="btn btn-success" onclick="" type="submit" value="Donwnload"
+                                style="width: 150px;">
+                        </div>
 
-            </div>
-            <% } %> 
-            <!-- settings 1 end -->
-            <!-- Download row ends -->
+                    </div>
+                    <% } %>
+                        <!-- settings 1 end -->
+                        <!-- Download row ends -->
 
         </div>
         <!-- Choice 1 ends -->
@@ -166,84 +188,91 @@
         <!-- Choice 2 of sidebar begins -->
         <div id="Paris " class="w3-container city " style="display:none ">
             <!-- Site Filter for ESIC Format -->
-            <% if (pagename === "settings") { %>
+            <% if (pagename==="settings" ) { %>
                 <h1>Hello From settings - tab 2</h1>
-            <% } else if (pagename ==="reports") { %>
-            <div class="row " style="margin-top: 5%;margin-left: 38%; ">
-                <form class="row " action="# ">
-                    <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
-                        <option value="A">All Sites</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                        </select>
-                    <input class="btn btn-primary" type="submit " value="Go " style="width: 50px;">
+                <% } else if (pagename==="reports" ) { %>
+                    <div class="row " style="margin-top: 5%;margin-left: 38%; ">
+                        <form class="row " action="# ">
+                            <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
+                                <option value="A">All Sites</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+                            <input class="btn btn-primary" type="submit " value="Go " style="width: 50px;">
 
-                </form>
-            </div>
-            <div class="row ">
-                <div class="col-12 ">
-                    <div style="margin-left: 1%;margin-top:5% ">
-                        <!--ESIC Format -->
-                        <table id="esic_table" class="table table-striped table-primary table-hover table-bordered">
-                            <th width="5%">Month</th>
-                            <th width="5%">IP No.</th>
-                            <th width="15%">IP Name</th>
-                            <th width="5%">No. of Days</th>
-                            <th width="10%">Total Monthly Wages</th>
-                            <th width="10%">Reason Code For 0 Working Days</th>
-                            <th width="10%">Last Working Day</th>
-
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Ramakant bahskar Mishra</td>
-                                <td>10000</td>
-                                <td>100</td>
-                                <td>121</td>
-                                <td>121</td>
-                            </tr>
-
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Ramakant Mishra</td>
-                                <td>1000000</td>
-                                <td>100000</td>
-                                <td>12131</td>
-                                <td>1214123</td>
-                            </tr>
-                        </table>
-                        <!-- Sites Table Ends -->
+                        </form>
                     </div>
-                </div>
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div style="margin-left: 1%;margin-top:5% ">
+                                <!--ESIC Format -->
+                                <table id="esic_table"
+                                    class="table table-striped table-primary table-hover table-bordered">
+                                    <th width="5%">Month</th>
+                                    <th width="5%">IP No.</th>
+                                    <th width="15%">IP Name</th>
+                                    <th width="5%">No. of Days</th>
+                                    <th width="10%">Total Monthly Wages</th>
+                                    <th width="10%">Reason Code For 0 Working Days</th>
+                                    <th width="10%">Last Working Day</th>
 
-            </div>
-            <!-- Row ends here -->
-            <!-- Download -->
-            <div class="row" style="margin-top: 5%;">
-                <div class="col">
-                    <input style="margin-right: 2%;" type="radio" id="age1" name="age" value="30">
-                    <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="40.748" height="39.822" viewBox="0 0 50.748 49.822">
-                        <path id="Icon_simple-microsoftexcel" data-name="Icon simple-microsoftexcel" d="M49.8,6.425h-17V9.571h5.011v4.978H32.8v1.586h5.011v4.984H32.8v1.63h5.011v4.713H32.8V29.35h5.011v4.724H32.8v1.888h5.011v4.751H32.8v3.466h17c.269-.08.493-.4.672-.947a4.637,4.637,0,0,0,.273-1.345V7c0-.271-.093-.433-.273-.491A2.326,2.326,0,0,0,49.8,6.425ZM47.6,40.709H39.442V35.962H47.6v4.747Zm0-6.635H39.442V29.348H47.6Zm0-6.614H39.442V22.767H47.6V27.46Zm0-6.343H39.442V16.139H47.6v4.978Zm0-6.6H39.442V9.573H47.6v4.948ZM0,5.64V44.972L29.941,50.15V.329L0,5.657ZM17.747,35.393q-.171-.463-1.6-3.939c-.949-2.317-1.522-3.667-1.689-4.051H14.4L11.19,35.046,6.9,34.757l5.092-9.515L7.327,15.726,11.7,15.5,14.6,22.941h.057l3.267-7.783,4.523-.285-5.386,10.3,5.551,10.5-4.861-.285Z" transform="translate(0 -0.328)" fill="#098212"/>
-                    </svg>
-                    <input style="margin-right: 2%;" type="radio" id="age2" name="age" value="60">
-                    <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="27.366" height="39.822" viewBox="0 0 37.366 49.822">
-                        <path id="Icon_awesome-file-pdf" data-name="Icon awesome-file-pdf" d="M17.7,24.921c-.487-1.557-.477-4.564-.195-4.564C18.323,20.357,18.245,23.947,17.7,24.921Zm-.165,4.593a44.9,44.9,0,0,1-2.764,6.1,35.831,35.831,0,0,1,6.121-2.131A12.605,12.605,0,0,1,17.535,29.513ZM8.378,41.658c0,.078,1.284-.525,3.4-3.912C11.122,38.359,8.943,40.13,8.378,41.658ZM24.132,15.569H37.366V47.486a2.33,2.33,0,0,1-2.335,2.335H2.335A2.33,2.33,0,0,1,0,47.486V2.335A2.33,2.33,0,0,1,2.335,0H21.8V13.234A2.342,2.342,0,0,0,24.132,15.569Zm-.778,16.717A9.766,9.766,0,0,1,19.2,27.052c.438-1.8,1.129-4.535.6-6.247-.457-2.861-4.126-2.579-4.651-.662-.487,1.781-.039,4.291.788,7.493a91.375,91.375,0,0,1-3.97,8.349c-.01,0-.01.01-.019.01-2.637,1.353-7.162,4.33-5.3,6.617a3.024,3.024,0,0,0,2.092.973c1.742,0,3.474-1.752,5.946-6.014a55.467,55.467,0,0,1,7.687-2.258,14.747,14.747,0,0,0,6.228,1.9,2.519,2.519,0,0,0,1.917-4.223C29.163,31.664,25.232,32.043,23.354,32.287ZM36.685,10.217,27.149.681A2.334,2.334,0,0,0,25.495,0h-.584V12.455H37.366v-.594A2.328,2.328,0,0,0,36.685,10.217ZM29.475,35.06c.4-.263-.243-1.158-4.165-.876C28.92,35.722,29.475,35.06,29.475,35.06Z" fill="#ff0007"/>
-                      </svg>
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Ramakant bahskar Mishra</td>
+                                        <td>10000</td>
+                                        <td>100</td>
+                                        <td>121</td>
+                                        <td>121</td>
+                                    </tr>
+
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Ramakant Mishra</td>
+                                        <td>1000000</td>
+                                        <td>100000</td>
+                                        <td>12131</td>
+                                        <td>1214123</td>
+                                    </tr>
+                                </table>
+                                <!-- Sites Table Ends -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Row ends here -->
+                    <!-- Download -->
+                    <div class="row" style="margin-top: 5%;">
+                        <div class="col">
+                            <input style="margin-right: 2%;" type="radio" id="age1" name="age" value="30">
+                            <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="40.748"
+                                height="39.822" viewBox="0 0 50.748 49.822">
+                                <path id="Icon_simple-microsoftexcel" data-name="Icon simple-microsoftexcel"
+                                    d="M49.8,6.425h-17V9.571h5.011v4.978H32.8v1.586h5.011v4.984H32.8v1.63h5.011v4.713H32.8V29.35h5.011v4.724H32.8v1.888h5.011v4.751H32.8v3.466h17c.269-.08.493-.4.672-.947a4.637,4.637,0,0,0,.273-1.345V7c0-.271-.093-.433-.273-.491A2.326,2.326,0,0,0,49.8,6.425ZM47.6,40.709H39.442V35.962H47.6v4.747Zm0-6.635H39.442V29.348H47.6Zm0-6.614H39.442V22.767H47.6V27.46Zm0-6.343H39.442V16.139H47.6v4.978Zm0-6.6H39.442V9.573H47.6v4.948ZM0,5.64V44.972L29.941,50.15V.329L0,5.657ZM17.747,35.393q-.171-.463-1.6-3.939c-.949-2.317-1.522-3.667-1.689-4.051H14.4L11.19,35.046,6.9,34.757l5.092-9.515L7.327,15.726,11.7,15.5,14.6,22.941h.057l3.267-7.783,4.523-.285-5.386,10.3,5.551,10.5-4.861-.285Z"
+                                    transform="translate(0 -0.328)" fill="#098212" />
+                            </svg>
+                            <input style="margin-right: 2%;" type="radio" id="age2" name="age" value="60">
+                            <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="27.366"
+                                height="39.822" viewBox="0 0 37.366 49.822">
+                                <path id="Icon_awesome-file-pdf" data-name="Icon awesome-file-pdf"
+                                    d="M17.7,24.921c-.487-1.557-.477-4.564-.195-4.564C18.323,20.357,18.245,23.947,17.7,24.921Zm-.165,4.593a44.9,44.9,0,0,1-2.764,6.1,35.831,35.831,0,0,1,6.121-2.131A12.605,12.605,0,0,1,17.535,29.513ZM8.378,41.658c0,.078,1.284-.525,3.4-3.912C11.122,38.359,8.943,40.13,8.378,41.658ZM24.132,15.569H37.366V47.486a2.33,2.33,0,0,1-2.335,2.335H2.335A2.33,2.33,0,0,1,0,47.486V2.335A2.33,2.33,0,0,1,2.335,0H21.8V13.234A2.342,2.342,0,0,0,24.132,15.569Zm-.778,16.717A9.766,9.766,0,0,1,19.2,27.052c.438-1.8,1.129-4.535.6-6.247-.457-2.861-4.126-2.579-4.651-.662-.487,1.781-.039,4.291.788,7.493a91.375,91.375,0,0,1-3.97,8.349c-.01,0-.01.01-.019.01-2.637,1.353-7.162,4.33-5.3,6.617a3.024,3.024,0,0,0,2.092.973c1.742,0,3.474-1.752,5.946-6.014a55.467,55.467,0,0,1,7.687-2.258,14.747,14.747,0,0,0,6.228,1.9,2.519,2.519,0,0,0,1.917-4.223C29.163,31.664,25.232,32.043,23.354,32.287ZM36.685,10.217,27.149.681A2.334,2.334,0,0,0,25.495,0h-.584V12.455H37.366v-.594A2.328,2.328,0,0,0,36.685,10.217ZM29.475,35.06c.4-.263-.243-1.158-4.165-.876C28.92,35.722,29.475,35.06,29.475,35.06Z"
+                                    fill="#ff0007" />
+                            </svg>
 
 
-                </div>
+                        </div>
 
-                <div class="col" style="margin-left:60%">
-                    <input class="btn btn-success" type="submit" value="Donwnload" style="width: 150px;">
-                </div>
+                        <div class="col" style="margin-left:60%">
+                            <input class="btn btn-success" type="submit" value="Donwnload" style="width: 150px;">
+                        </div>
 
-            </div>
-            <% } %>
-            
-            <!-- Download row ends -->
+                    </div>
+                    <% } %>
+
+                        <!-- Download row ends -->
         </div>
         <!-- Choice 2 of sidebar ends-->
 
@@ -251,206 +280,218 @@
         <div id="Tokyo " class="w3-container city " style="display:none ">
 
             <!-- Site Filter for NEFT Format -->
-            <% if (pagename === "settings") { %>
+            <% if (pagename==="settings" ) { %>
                 <h1>Hello From settings - tab 3</h1>
-            <% } else if (pagename ==="reports") { %>
-            <div class="row " style="margin-top: 5%;margin-left: 38%; ">
-                <form class="row " action="# ">
-                    <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
-                        <option value="A">All Sites</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                        </select>
-                    <input class="btn btn-primary" type="submit " value="Go " style="width: 50px;">
-                </form>
-            </div>
-            <!-- Row 1 ends and 2 begins -->
-            <div class="row ">
-                <div class="col-12 ">
-                    <div style="margin-left: 1%;margin-top:5% ">
-                        <!--NEFT Format -->
-                        <table class="table table-striped table-primary table-hover table-bordered">
-                            <th width="5%">SR No.</th>
-                            <th width="5%">Employee ID</th>
-                            <th width="20%">Benificiary Name</th>
-                            <th width="20%">Bank Name</th>
-                            <th width="5%">Days</th>
-                            <th width="5%">Employee A/C No.</th>
-                            <th width="5%">IFSC Code</th>
-                            <th width="20%">BEN Addres</th>
-                            <th width="5%">Amount</th>
-                            <th width="10%">Heads</th>
-
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Ramakant bahskar Mishra</td>
-                                <td>State Bank of India</td>
-                                <td>28</td>
-                                <td>1231213121</td>
-                                <td>SBIN121312</td>
-                                <td>12, Sarasbag, Pune 431401</td>
-                                <td>1500000</td>
-                                <td>Salary</td>
-                            </tr>
-
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Ramakant bahskar Mishra</td>
-                                <td>State Bank of India</td>
-                                <td>28</td>
-                                <td>1231213121</td>
-                                <td>SBIN121312</td>
-                                <td>12, Sarasbag, Pune 431401</td>
-                                <td>1500000</td>
-                                <td>Salary</td>
-                            </tr>
-                        </table>
-                        <!-- NEFT Table Ends -->
+                <% } else if (pagename==="reports" ) { %>
+                    <div class="row " style="margin-top: 5%;margin-left: 38%; ">
+                        <form class="row " action="# ">
+                            <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
+                                <option value="A">All Sites</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+                            <input class="btn btn-primary" type="submit " value="Go " style="width: 50px;">
+                        </form>
                     </div>
-                </div>
-                
-            </div>
-            <!-- Row 2 ends here -->
-            <!-- Download -->
-            <div class="row" style="margin-top: 5%;">
-                <div class="col">
-                    <input style="margin-right: 2%;" type="radio" id="age1" name="age" value="30">
-                    <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="40.748" height="39.822" viewBox="0 0 50.748 49.822">
-                        <path id="Icon_simple-microsoftexcel" data-name="Icon simple-microsoftexcel" d="M49.8,6.425h-17V9.571h5.011v4.978H32.8v1.586h5.011v4.984H32.8v1.63h5.011v4.713H32.8V29.35h5.011v4.724H32.8v1.888h5.011v4.751H32.8v3.466h17c.269-.08.493-.4.672-.947a4.637,4.637,0,0,0,.273-1.345V7c0-.271-.093-.433-.273-.491A2.326,2.326,0,0,0,49.8,6.425ZM47.6,40.709H39.442V35.962H47.6v4.747Zm0-6.635H39.442V29.348H47.6Zm0-6.614H39.442V22.767H47.6V27.46Zm0-6.343H39.442V16.139H47.6v4.978Zm0-6.6H39.442V9.573H47.6v4.948ZM0,5.64V44.972L29.941,50.15V.329L0,5.657ZM17.747,35.393q-.171-.463-1.6-3.939c-.949-2.317-1.522-3.667-1.689-4.051H14.4L11.19,35.046,6.9,34.757l5.092-9.515L7.327,15.726,11.7,15.5,14.6,22.941h.057l3.267-7.783,4.523-.285-5.386,10.3,5.551,10.5-4.861-.285Z" transform="translate(0 -0.328)" fill="#098212"/>
-                    </svg>
-                    <input style="margin-right: 2%;" type="radio" id="age2" name="age" value="60">
-                    <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="27.366" height="39.822" viewBox="0 0 37.366 49.822">
-                        <path id="Icon_awesome-file-pdf" data-name="Icon awesome-file-pdf" d="M17.7,24.921c-.487-1.557-.477-4.564-.195-4.564C18.323,20.357,18.245,23.947,17.7,24.921Zm-.165,4.593a44.9,44.9,0,0,1-2.764,6.1,35.831,35.831,0,0,1,6.121-2.131A12.605,12.605,0,0,1,17.535,29.513ZM8.378,41.658c0,.078,1.284-.525,3.4-3.912C11.122,38.359,8.943,40.13,8.378,41.658ZM24.132,15.569H37.366V47.486a2.33,2.33,0,0,1-2.335,2.335H2.335A2.33,2.33,0,0,1,0,47.486V2.335A2.33,2.33,0,0,1,2.335,0H21.8V13.234A2.342,2.342,0,0,0,24.132,15.569Zm-.778,16.717A9.766,9.766,0,0,1,19.2,27.052c.438-1.8,1.129-4.535.6-6.247-.457-2.861-4.126-2.579-4.651-.662-.487,1.781-.039,4.291.788,7.493a91.375,91.375,0,0,1-3.97,8.349c-.01,0-.01.01-.019.01-2.637,1.353-7.162,4.33-5.3,6.617a3.024,3.024,0,0,0,2.092.973c1.742,0,3.474-1.752,5.946-6.014a55.467,55.467,0,0,1,7.687-2.258,14.747,14.747,0,0,0,6.228,1.9,2.519,2.519,0,0,0,1.917-4.223C29.163,31.664,25.232,32.043,23.354,32.287ZM36.685,10.217,27.149.681A2.334,2.334,0,0,0,25.495,0h-.584V12.455H37.366v-.594A2.328,2.328,0,0,0,36.685,10.217ZM29.475,35.06c.4-.263-.243-1.158-4.165-.876C28.92,35.722,29.475,35.06,29.475,35.06Z" fill="#ff0007"/>
-                      </svg>
+                    <!-- Row 1 ends and 2 begins -->
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div style="margin-left: 1%;margin-top:5% ">
+                                <!--NEFT Format -->
+                                <table class="table table-striped table-primary table-hover table-bordered">
+                                    <th width="5%">SR No.</th>
+                                    <th width="5%">Employee ID</th>
+                                    <th width="20%">Benificiary Name</th>
+                                    <th width="20%">Bank Name</th>
+                                    <th width="5%">Days</th>
+                                    <th width="5%">Employee A/C No.</th>
+                                    <th width="5%">IFSC Code</th>
+                                    <th width="20%">BEN Addres</th>
+                                    <th width="5%">Amount</th>
+                                    <th width="10%">Heads</th>
+
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Ramakant bahskar Mishra</td>
+                                        <td>State Bank of India</td>
+                                        <td>28</td>
+                                        <td>1231213121</td>
+                                        <td>SBIN121312</td>
+                                        <td>12, Sarasbag, Pune 431401</td>
+                                        <td>1500000</td>
+                                        <td>Salary</td>
+                                    </tr>
+
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Ramakant bahskar Mishra</td>
+                                        <td>State Bank of India</td>
+                                        <td>28</td>
+                                        <td>1231213121</td>
+                                        <td>SBIN121312</td>
+                                        <td>12, Sarasbag, Pune 431401</td>
+                                        <td>1500000</td>
+                                        <td>Salary</td>
+                                    </tr>
+                                </table>
+                                <!-- NEFT Table Ends -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Row 2 ends here -->
+                    <!-- Download -->
+                    <div class="row" style="margin-top: 5%;">
+                        <div class="col">
+                            <input style="margin-right: 2%;" type="radio" id="age1" name="age" value="30">
+                            <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="40.748"
+                                height="39.822" viewBox="0 0 50.748 49.822">
+                                <path id="Icon_simple-microsoftexcel" data-name="Icon simple-microsoftexcel"
+                                    d="M49.8,6.425h-17V9.571h5.011v4.978H32.8v1.586h5.011v4.984H32.8v1.63h5.011v4.713H32.8V29.35h5.011v4.724H32.8v1.888h5.011v4.751H32.8v3.466h17c.269-.08.493-.4.672-.947a4.637,4.637,0,0,0,.273-1.345V7c0-.271-.093-.433-.273-.491A2.326,2.326,0,0,0,49.8,6.425ZM47.6,40.709H39.442V35.962H47.6v4.747Zm0-6.635H39.442V29.348H47.6Zm0-6.614H39.442V22.767H47.6V27.46Zm0-6.343H39.442V16.139H47.6v4.978Zm0-6.6H39.442V9.573H47.6v4.948ZM0,5.64V44.972L29.941,50.15V.329L0,5.657ZM17.747,35.393q-.171-.463-1.6-3.939c-.949-2.317-1.522-3.667-1.689-4.051H14.4L11.19,35.046,6.9,34.757l5.092-9.515L7.327,15.726,11.7,15.5,14.6,22.941h.057l3.267-7.783,4.523-.285-5.386,10.3,5.551,10.5-4.861-.285Z"
+                                    transform="translate(0 -0.328)" fill="#098212" />
+                            </svg>
+                            <input style="margin-right: 2%;" type="radio" id="age2" name="age" value="60">
+                            <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="27.366"
+                                height="39.822" viewBox="0 0 37.366 49.822">
+                                <path id="Icon_awesome-file-pdf" data-name="Icon awesome-file-pdf"
+                                    d="M17.7,24.921c-.487-1.557-.477-4.564-.195-4.564C18.323,20.357,18.245,23.947,17.7,24.921Zm-.165,4.593a44.9,44.9,0,0,1-2.764,6.1,35.831,35.831,0,0,1,6.121-2.131A12.605,12.605,0,0,1,17.535,29.513ZM8.378,41.658c0,.078,1.284-.525,3.4-3.912C11.122,38.359,8.943,40.13,8.378,41.658ZM24.132,15.569H37.366V47.486a2.33,2.33,0,0,1-2.335,2.335H2.335A2.33,2.33,0,0,1,0,47.486V2.335A2.33,2.33,0,0,1,2.335,0H21.8V13.234A2.342,2.342,0,0,0,24.132,15.569Zm-.778,16.717A9.766,9.766,0,0,1,19.2,27.052c.438-1.8,1.129-4.535.6-6.247-.457-2.861-4.126-2.579-4.651-.662-.487,1.781-.039,4.291.788,7.493a91.375,91.375,0,0,1-3.97,8.349c-.01,0-.01.01-.019.01-2.637,1.353-7.162,4.33-5.3,6.617a3.024,3.024,0,0,0,2.092.973c1.742,0,3.474-1.752,5.946-6.014a55.467,55.467,0,0,1,7.687-2.258,14.747,14.747,0,0,0,6.228,1.9,2.519,2.519,0,0,0,1.917-4.223C29.163,31.664,25.232,32.043,23.354,32.287ZM36.685,10.217,27.149.681A2.334,2.334,0,0,0,25.495,0h-.584V12.455H37.366v-.594A2.328,2.328,0,0,0,36.685,10.217ZM29.475,35.06c.4-.263-.243-1.158-4.165-.876C28.92,35.722,29.475,35.06,29.475,35.06Z"
+                                    fill="#ff0007" />
+                            </svg>
 
 
-                </div>
+                        </div>
 
-                <div class="col" style="margin-left:60%">
-                    <input class="btn btn-success" type="submit" value="Donwnload" style="width: 150px;">
-                </div>
+                        <div class="col" style="margin-left:60%">
+                            <input class="btn btn-success" type="submit" value="Donwnload" style="width: 150px;">
+                        </div>
 
-            </div>
-            <!-- Download row ends -->
-            <% } %>
+                    </div>
+                    <!-- Download row ends -->
+                    <% } %>
         </div>
         <!-- NEFT Choice Body Ends here -->
 
         <!-- Custom Report Choice Begins here-->
         <div id="Mumbai " class="w3-container city " style="display:none ">
             <!-- Site Filter for NEFT Format -->
-            <% if (pagename === "settings") { %>
+            <% if (pagename==="settings" ) { %>
                 <h1>Hello From settings - tab 4</h1>
-            <% } else if (pagename ==="reports") { %>
-            <div class="row " style="margin-top: 5%;margin-left: 22%; ">
-                <form class="row " action="# ">
-                    <input type="month" name="month" id="">
+                <% } else if (pagename==="reports" ) { %>
+                    <div class="row " style="margin-top: 5%;margin-left: 22%; ">
+                        <form class="row " action="# ">
+                            <input type="month" name="month" id="">
 
-                    <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
-                        <option value="A">All Sites</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                    </select>
-
-
-                    <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
-                        <option value="A">All Designations</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                    </select>
+                            <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
+                                <option value="A">All Sites</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
 
 
-                    <input class="btn btn-primary" type="submit " value="Go " style="width: 50px;">
-                </form>
-            </div>
-            <!-- Row 1 ends and 2 begins -->
-            <div class="row ">
-                <div class="col-12 ">
-                    <div style="margin-left: 1%;margin-top:5% ">
-                        <!--NEFT Format -->
-                        <table class="table table-striped table-primary table-hover table-bordered">
-                            <th width="5%">Employee ID</th>
-                            <th width="5%">Site ID</th>
-                            <th width="7%">Designation</th>
-                            <th width="20%">Employee Name</th>
-                            <th width="10%">CTC</th>
-                            <th width="5%">Monthly</th>
-                            <th width="3%">Leave 1</th>
-                            <th width="3%">Leave 2</th>
-                            <th width="3%">Leave 3</th>
+                            <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
+                                <option value="A">All Designations</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
 
 
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Manager</td>
-                                <td>Ramakant Shashikant Mishra</td>
-                                <td>144000</td>
-                                <td>12000</td>
-                                <td>31</td>
-                                <td>12</td>
-                                <td>15</td>
-                            </tr>
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Manager</td>
-                                <td>Ramakant Shashikant Mishra</td>
-                                <td>144000</td>
-                                <td>12000</td>
-                                <td>31</td>
-                                <td>12</td>
-                                <td>15</td>
-                            </tr>
-                            <tr class=" table-light ">
-                                <td>1</td>
-                                <td>ID123</td>
-                                <td>Manager</td>
-                                <td>Ramakant Shashikant Mishra</td>
-                                <td>144000</td>
-                                <td>12000</td>
-                                <td>31</td>
-                                <td>12</td>
-                                <td>15</td>
-                            </tr>
-                        </table>
-                        <!-- Custom Report Table Ends -->
+                            <input class="btn btn-primary" type="submit " value="Go " style="width: 50px;">
+                        </form>
                     </div>
-                </div>
-            </div>
-            <!-- Row 2 ends here -->
-            <!-- Download -->
-            <div class="row" style="margin-top: 5%;">
-                <div class="col">
-                    <input style="margin-right: 2%;" type="radio" id="age1" name="age" value="30">
-                    <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="40.748" height="39.822" viewBox="0 0 50.748 49.822">
-                        <path id="Icon_simple-microsoftexcel" data-name="Icon simple-microsoftexcel" d="M49.8,6.425h-17V9.571h5.011v4.978H32.8v1.586h5.011v4.984H32.8v1.63h5.011v4.713H32.8V29.35h5.011v4.724H32.8v1.888h5.011v4.751H32.8v3.466h17c.269-.08.493-.4.672-.947a4.637,4.637,0,0,0,.273-1.345V7c0-.271-.093-.433-.273-.491A2.326,2.326,0,0,0,49.8,6.425ZM47.6,40.709H39.442V35.962H47.6v4.747Zm0-6.635H39.442V29.348H47.6Zm0-6.614H39.442V22.767H47.6V27.46Zm0-6.343H39.442V16.139H47.6v4.978Zm0-6.6H39.442V9.573H47.6v4.948ZM0,5.64V44.972L29.941,50.15V.329L0,5.657ZM17.747,35.393q-.171-.463-1.6-3.939c-.949-2.317-1.522-3.667-1.689-4.051H14.4L11.19,35.046,6.9,34.757l5.092-9.515L7.327,15.726,11.7,15.5,14.6,22.941h.057l3.267-7.783,4.523-.285-5.386,10.3,5.551,10.5-4.861-.285Z" transform="translate(0 -0.328)" fill="#098212"/>
-                    </svg>
-                    <input style="margin-right: 2%;" type="radio" id="age2" name="age" value="60">
-                    <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="27.366" height="39.822" viewBox="0 0 37.366 49.822">
-                        <path id="Icon_awesome-file-pdf" data-name="Icon awesome-file-pdf" d="M17.7,24.921c-.487-1.557-.477-4.564-.195-4.564C18.323,20.357,18.245,23.947,17.7,24.921Zm-.165,4.593a44.9,44.9,0,0,1-2.764,6.1,35.831,35.831,0,0,1,6.121-2.131A12.605,12.605,0,0,1,17.535,29.513ZM8.378,41.658c0,.078,1.284-.525,3.4-3.912C11.122,38.359,8.943,40.13,8.378,41.658ZM24.132,15.569H37.366V47.486a2.33,2.33,0,0,1-2.335,2.335H2.335A2.33,2.33,0,0,1,0,47.486V2.335A2.33,2.33,0,0,1,2.335,0H21.8V13.234A2.342,2.342,0,0,0,24.132,15.569Zm-.778,16.717A9.766,9.766,0,0,1,19.2,27.052c.438-1.8,1.129-4.535.6-6.247-.457-2.861-4.126-2.579-4.651-.662-.487,1.781-.039,4.291.788,7.493a91.375,91.375,0,0,1-3.97,8.349c-.01,0-.01.01-.019.01-2.637,1.353-7.162,4.33-5.3,6.617a3.024,3.024,0,0,0,2.092.973c1.742,0,3.474-1.752,5.946-6.014a55.467,55.467,0,0,1,7.687-2.258,14.747,14.747,0,0,0,6.228,1.9,2.519,2.519,0,0,0,1.917-4.223C29.163,31.664,25.232,32.043,23.354,32.287ZM36.685,10.217,27.149.681A2.334,2.334,0,0,0,25.495,0h-.584V12.455H37.366v-.594A2.328,2.328,0,0,0,36.685,10.217ZM29.475,35.06c.4-.263-.243-1.158-4.165-.876C28.92,35.722,29.475,35.06,29.475,35.06Z" fill="#ff0007"/>
-                      </svg>
+                    <!-- Row 1 ends and 2 begins -->
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div style="margin-left: 1%;margin-top:5% ">
+                                <!--NEFT Format -->
+                                <table class="table table-striped table-primary table-hover table-bordered">
+                                    <th width="5%">Employee ID</th>
+                                    <th width="5%">Site ID</th>
+                                    <th width="7%">Designation</th>
+                                    <th width="20%">Employee Name</th>
+                                    <th width="10%">CTC</th>
+                                    <th width="5%">Monthly</th>
+                                    <th width="3%">Leave 1</th>
+                                    <th width="3%">Leave 2</th>
+                                    <th width="3%">Leave 3</th>
 
 
-                </div>
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Manager</td>
+                                        <td>Ramakant Shashikant Mishra</td>
+                                        <td>144000</td>
+                                        <td>12000</td>
+                                        <td>31</td>
+                                        <td>12</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Manager</td>
+                                        <td>Ramakant Shashikant Mishra</td>
+                                        <td>144000</td>
+                                        <td>12000</td>
+                                        <td>31</td>
+                                        <td>12</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr class=" table-light ">
+                                        <td>1</td>
+                                        <td>ID123</td>
+                                        <td>Manager</td>
+                                        <td>Ramakant Shashikant Mishra</td>
+                                        <td>144000</td>
+                                        <td>12000</td>
+                                        <td>31</td>
+                                        <td>12</td>
+                                        <td>15</td>
+                                    </tr>
+                                </table>
+                                <!-- Custom Report Table Ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 2 ends here -->
+                    <!-- Download -->
+                    <div class="row" style="margin-top: 5%;">
+                        <div class="col">
+                            <input style="margin-right: 2%;" type="radio" id="age1" name="age" value="30">
+                            <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="40.748"
+                                height="39.822" viewBox="0 0 50.748 49.822">
+                                <path id="Icon_simple-microsoftexcel" data-name="Icon simple-microsoftexcel"
+                                    d="M49.8,6.425h-17V9.571h5.011v4.978H32.8v1.586h5.011v4.984H32.8v1.63h5.011v4.713H32.8V29.35h5.011v4.724H32.8v1.888h5.011v4.751H32.8v3.466h17c.269-.08.493-.4.672-.947a4.637,4.637,0,0,0,.273-1.345V7c0-.271-.093-.433-.273-.491A2.326,2.326,0,0,0,49.8,6.425ZM47.6,40.709H39.442V35.962H47.6v4.747Zm0-6.635H39.442V29.348H47.6Zm0-6.614H39.442V22.767H47.6V27.46Zm0-6.343H39.442V16.139H47.6v4.978Zm0-6.6H39.442V9.573H47.6v4.948ZM0,5.64V44.972L29.941,50.15V.329L0,5.657ZM17.747,35.393q-.171-.463-1.6-3.939c-.949-2.317-1.522-3.667-1.689-4.051H14.4L11.19,35.046,6.9,34.757l5.092-9.515L7.327,15.726,11.7,15.5,14.6,22.941h.057l3.267-7.783,4.523-.285-5.386,10.3,5.551,10.5-4.861-.285Z"
+                                    transform="translate(0 -0.328)" fill="#098212" />
+                            </svg>
+                            <input style="margin-right: 2%;" type="radio" id="age2" name="age" value="60">
+                            <svg style="margin-right: 2%;" xmlns="http://www.w3.org/2000/svg" width="27.366"
+                                height="39.822" viewBox="0 0 37.366 49.822">
+                                <path id="Icon_awesome-file-pdf" data-name="Icon awesome-file-pdf"
+                                    d="M17.7,24.921c-.487-1.557-.477-4.564-.195-4.564C18.323,20.357,18.245,23.947,17.7,24.921Zm-.165,4.593a44.9,44.9,0,0,1-2.764,6.1,35.831,35.831,0,0,1,6.121-2.131A12.605,12.605,0,0,1,17.535,29.513ZM8.378,41.658c0,.078,1.284-.525,3.4-3.912C11.122,38.359,8.943,40.13,8.378,41.658ZM24.132,15.569H37.366V47.486a2.33,2.33,0,0,1-2.335,2.335H2.335A2.33,2.33,0,0,1,0,47.486V2.335A2.33,2.33,0,0,1,2.335,0H21.8V13.234A2.342,2.342,0,0,0,24.132,15.569Zm-.778,16.717A9.766,9.766,0,0,1,19.2,27.052c.438-1.8,1.129-4.535.6-6.247-.457-2.861-4.126-2.579-4.651-.662-.487,1.781-.039,4.291.788,7.493a91.375,91.375,0,0,1-3.97,8.349c-.01,0-.01.01-.019.01-2.637,1.353-7.162,4.33-5.3,6.617a3.024,3.024,0,0,0,2.092.973c1.742,0,3.474-1.752,5.946-6.014a55.467,55.467,0,0,1,7.687-2.258,14.747,14.747,0,0,0,6.228,1.9,2.519,2.519,0,0,0,1.917-4.223C29.163,31.664,25.232,32.043,23.354,32.287ZM36.685,10.217,27.149.681A2.334,2.334,0,0,0,25.495,0h-.584V12.455H37.366v-.594A2.328,2.328,0,0,0,36.685,10.217ZM29.475,35.06c.4-.263-.243-1.158-4.165-.876C28.92,35.722,29.475,35.06,29.475,35.06Z"
+                                    fill="#ff0007" />
+                            </svg>
 
-                <div class="col" style="margin-left:60%">
-                    <input class="btn btn-success" type="submit" value="Donwnload" style="width: 150px;">
-                </div>
 
-            </div>
-            <!-- Download row ends -->
+                        </div>
+
+                        <div class="col" style="margin-left:60%">
+                            <input class="btn btn-success" type="submit" value="Donwnload" style="width: 150px;">
+                        </div>
+
+                    </div>
+                    <!-- Download row ends -->
         </div>
-        
-<% } %>
+
+        <% } %>
     </div>
 
     <!-- Footer starts -->
@@ -489,10 +530,17 @@
 
 
 </html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
-</script>rc="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+    crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+    crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
+    </script>rc="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
 </script>
