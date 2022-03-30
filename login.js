@@ -143,7 +143,13 @@ app.post('/auth', function(request, response) {
 		
 		
 		});
-
+// router.get('/user-list', function(req, res, next) {
+// 			var sql='SELECT * FROM users';
+// 			db.query(sql, function (err, data, fields) {
+// 			if (err) throw err;
+// 			res.render('user-list', { title: 'User List', userData: data});
+// 		  });
+// 		});
 //register logic end
 
 // // http://localhost:3000/home

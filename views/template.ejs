@@ -24,7 +24,7 @@
     <div class="w3-sidebar w3-bar-block w3-card " style="width:300px; position:fixed">
         <div class="report-image" style="background-color: #D8DBF2; text-align: center; ">
             <img src="<%= imgname %>" alt="" style="width:200px; margin:20px 45px">
-            <h3 style="margin-top: -15px;padding-bottom:15px;color: black;"><b>Reports</b></h3>
+            <h3 style="margin-top: -15px;padding-bottom:15px;color: black;"><b><%= pagename %></b></h3>
         </div>
 
         <button class="w3-bar-item w3-button tablink svg-class" onclick="openCity(event, 'London ')">
@@ -70,7 +70,12 @@
     <div style="margin-left:330px ">
         <div id="London " class="w3-container city " style="display:none ">
             <!-- Site Filter for PF Format -->
-            <div class="row " style="margin-top: 5%;margin-left: 38%; ">
+            <!-- setting 1 -->
+            <% if (pagename === "settings") { %>
+                <h1>Hello From settings - tab 1</h1>
+            <% } else if (pagename ==="reports") { %>
+             <h1>From reports</h1>
+             <div class="row " style="margin-top: 5%;margin-left: 38%; ">
                 <form class="row " action="# ">
                     <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
                         <option value="A">All Sites</option>
@@ -129,7 +134,7 @@
                     </div>
                 </div>
 
-            </div>
+</div>
             <!-- Row ends here -->
             <!-- Download -->
             <div class="row" style="margin-top: 5%;">
@@ -151,6 +156,8 @@
                 </div>
 
             </div>
+            <% } %> 
+            <!-- settings 1 end -->
             <!-- Download row ends -->
 
         </div>
@@ -159,6 +166,9 @@
         <!-- Choice 2 of sidebar begins -->
         <div id="Paris " class="w3-container city " style="display:none ">
             <!-- Site Filter for ESIC Format -->
+            <% if (pagename === "settings") { %>
+                <h1>Hello From settings - tab 2</h1>
+            <% } else if (pagename ==="reports") { %>
             <div class="row " style="margin-top: 5%;margin-left: 38%; ">
                 <form class="row " action="# ">
                     <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
@@ -231,6 +241,8 @@
                 </div>
 
             </div>
+            <% } %>
+            
             <!-- Download row ends -->
         </div>
         <!-- Choice 2 of sidebar ends-->
@@ -239,6 +251,9 @@
         <div id="Tokyo " class="w3-container city " style="display:none ">
 
             <!-- Site Filter for NEFT Format -->
+            <% if (pagename === "settings") { %>
+                <h1>Hello From settings - tab 3</h1>
+            <% } else if (pagename ==="reports") { %>
             <div class="row " style="margin-top: 5%;margin-left: 38%; ">
                 <form class="row " action="# ">
                     <select name="site" id="site" style="width: 140px; margin-left:10px; margin-right:10px">
@@ -297,6 +312,7 @@
                         <!-- NEFT Table Ends -->
                     </div>
                 </div>
+                
             </div>
             <!-- Row 2 ends here -->
             <!-- Download -->
@@ -320,12 +336,16 @@
 
             </div>
             <!-- Download row ends -->
+            <% } %>
         </div>
         <!-- NEFT Choice Body Ends here -->
 
         <!-- Custom Report Choice Begins here-->
         <div id="Mumbai " class="w3-container city " style="display:none ">
             <!-- Site Filter for NEFT Format -->
+            <% if (pagename === "settings") { %>
+                <h1>Hello From settings - tab 4</h1>
+            <% } else if (pagename ==="reports") { %>
             <div class="row " style="margin-top: 5%;margin-left: 22%; ">
                 <form class="row " action="# ">
                     <input type="month" name="month" id="">
@@ -429,7 +449,8 @@
             </div>
             <!-- Download row ends -->
         </div>
-
+        
+<% } %>
     </div>
 
     <!-- Footer starts -->
