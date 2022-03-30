@@ -8,13 +8,23 @@ const { resolveInclude } = require("ejs");
 var reportlist = ["PF Format", "ESIC Format", "NEFT Format", "Custom Report", "logout"];
 var settinglist = ["Site Settings", "Employee Settings", "Change Password", "Salary Settings", "Log Out"];
 const con = mysql.createConnection({
-	host     : 'us-cdbr-east-05.cleardb.net',
-    port : 3307,
-	user     : 'b0c522ab6e71be',
-	password : '079c45a6',
-	database : 'heroku_e064bc22a0a0a92'
-});
+	host: "localhost",
+  port: 3307,
+  user: "root",
+  password: "",
+  database: "node"
 
+  	// host     : 'us-cdbr-east-05.cleardb.net',
+    // port : 3307,
+	// user     : 'b0c522ab6e71be',
+	// password : '079c45a6',
+	// database : 'heroku_e064bc22a0a0a92'
+});
+con.connect(function(err) {
+	if (err) throw err;
+	console.log("Connected!");
+	
+  });
 const app = express();
 
 app.use(session({
@@ -53,7 +63,7 @@ app.get("/reports", function (req, res) {
 		imgname : "img/add_monthly.png",
 		list : reportlist
     })
-});
+}); 
 
 app.get("/settings", function (req, res) {
    
@@ -92,7 +102,6 @@ app.post('/auth', function(request, response) {
 	}
 });
 
-s
 
 	app.post('/register', function(req, res) {
 
@@ -128,7 +137,7 @@ s
 		{                                                      
 		  if (err)
 			 throw err;
-		colsole.log("success");
+		console.log("success");
 		});
 		res.end()
 		
