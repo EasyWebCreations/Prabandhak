@@ -65,13 +65,29 @@ app.get("/reports", function (req, res) {
     })
 }); 
 
-app.get("/settings", function (req, res) {
-   
-    res.render("template", {
-        pagename: "settings",
-		imgname : "img/settings.png",
-		list : settinglist
-    })
+app.get("/settings", function (req, res,next) {
+	query ='SELECT * FROM sites';
+	con.query(query,function(err,rows) {
+	
+		if(err){
+		 req.flash('error', err); 
+		 res.render("template", {
+			pagename: "settings",
+			imgname : "img/settings.png",
+			list : settinglist
+		})
+		}else{
+			res.render("template", {
+				pagename: "settings",
+				imgname : "img/settings.png",
+				list : settinglist,
+				data:rows	
+			})
+		}					
+		 });
+		 
+	
+		 		 
 });
 // http://localhost:3000/auth
 app.post('/auth', function(request, response) {

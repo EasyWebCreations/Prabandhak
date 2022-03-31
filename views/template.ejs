@@ -86,7 +86,37 @@
             <!-- Site Filter for PF Format -->
             <!-- setting 1 -->
             <% if (pagename==="settings" ) { %>
-                <h1>Hello From settings - tab 1</h1>
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Sr No</th>
+                        <th scope="col">Site Id</th>
+                        <th scope="col">Site Name</th>
+                        
+                     
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% if(data.length){
+                    
+                      for(var i = 0; i< data.length; i++) {%>  
+                      <tr>
+                        <th scope="row"><%= (i+1) %></th>
+                        <td><%= data[i].SITE_ID%></td>
+                        <td><%= data[i].SITE_NAME%></td>
+                        
+                      </tr>
+                      <% }
+            }else{ %>
+                           <tr>
+                              <td colspan="3">No user</td>
+                           </tr>
+                        <% } %>    
+                      
+                    </tbody>
+                    </table>
+               
                 <% } else if (pagename==="reports" ) { %>
                     <h1>From reports</h1>
                     <div class="row " style="margin-top: 5%;margin-left: 38%; ">
@@ -179,16 +209,13 @@
 
                     </div>
                     <% } %>
-                        <!-- settings 1 end -->
-                        <!-- Download row ends -->
-
+                        
         </div>
-        <!-- Choice 1 ends -->
-
-        <!-- Choice 2 of sidebar begins -->
+       
         <div id="Paris " class="w3-container city " style="display:none ">
             <!-- Site Filter for ESIC Format -->
             <% if (pagename==="settings" ) { %>
+
                 <h1>Hello From settings - tab 2</h1>
                 <% } else if (pagename==="reports" ) { %>
                     <div class="row " style="margin-top: 5%;margin-left: 38%; ">
